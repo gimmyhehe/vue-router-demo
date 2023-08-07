@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="router-box" style="background: red">
     This is about page.
   </div>
 </template>
