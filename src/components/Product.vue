@@ -11,16 +11,18 @@ const getProductInfo = () => {
 }
 export default {
   mounted() {
-    console.log(this.$route)
+    console.log('mounted execed', this.$route)
   },
   watch: {
     '$route.params.id'() {
+      console.log('option api watch')
       getProductInfo()
     }
   },
   setup() {
     const route = useRoute()
     watch(() => route.params.id, () => {
+      console.log('compotision api watch')
       getProductInfo()
     })
   }
