@@ -10,13 +10,17 @@ import HomeMain from '../components/home-page/Main.vue';
 
 
 const nestedRoutes = [
-  { path: 'home', components: {
+  { path: 'home', 
+    // component: Home,
+    components: {
       aside: HomeAside,
       header: HomeHeader,
       default: HomeMain,
     } 
   },
-  { path: 'about', components: {
+  { path: 'about', 
+    // component: About,
+    components: {
       aside: AboutAside,
       header: AboutHeader,
       default: AboutMain,
