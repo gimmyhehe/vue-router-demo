@@ -1,0 +1,3 @@
+<template>
+    Vue Router
+</template>
