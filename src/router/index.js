@@ -26,7 +26,10 @@ router.beforeEach(() => {
   console.log('global-beforeEach')
 })
 
-router.beforeResolve(() => {
+router.beforeResolve((to) => {
+  // if (to.path === '/home') {
+  //   return false
+  // }
   console.log('global-beforeResolve')
 })
 
