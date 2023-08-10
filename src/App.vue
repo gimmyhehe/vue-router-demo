@@ -9,6 +9,7 @@ export default {
     }
     const replace = () => {
       router.replace({ path: '/home', query: { flag: 'replace' } })
+      // router.replace({ name: 'product', params: { id: '123/%' }, query: { flag: 'replace' } })
     }
     const forward = () => {
       router.go(1)
